@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Advance Webpage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="task_3_adv.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="site-name">My Advance Webpage</div>
+        <div class="nav-links">
+            <a href="#" onclick="showSection('all'); return false;">Home</a>
+            <a href="#" onclick="showSection('quiz-section'); return false;">Quiz</a>
+            <a href="#" onclick="showSection('gallery-section'); return false;">Gallery</a>
+            <a href="#" onclick="showSection('joke-section'); return false;">Jokes</a>
+        </div>
+    </nav>
+
+    <section id="quiz-section">
+        <h2>Quiz</h2>
+        <div id="quiz-category-select">
+            <label for="category">Choose Category:</label>
+            <select id="category">
+                <option value="simple">Simple</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            <button id="start-quiz-btn">Start Quiz</button>
+        </div>
+        <div id="quiz-container">
+            <p id="quiz-question"></p>
+            <div id="quiz-options"></div>
+            <button id="next-question" style="display:none;">Next</button>
+            <p id="quiz-result"></p>
+        </div>
+    </section>
+
+    <section id="gallery-section">
+        <h2>Gallery</h2>
+        <div id="carousel">
+            <img id="carousel-img" src="image1.webp" alt="carousel image">
+            <div>
+                <button id="prev-btn">Prev</button>
+                <button id="next-btn">Next</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="joke-section">
+        <h2>Jokes</h2>
+        <button id="joke-btn">Get Joke</button>
+        <p id="joke"></p>
+    </section>
+
+    <script src="task_3_adv.js"></script>
+</body>
+
+</html>
